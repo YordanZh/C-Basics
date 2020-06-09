@@ -1,0 +1,29 @@
+using System;
+
+namespace firstStepsinCodingExcersises
+{
+    class Program
+    {
+        static void Main(string[] args)
+
+        {
+            double strawberrylvperkg = double.Parse(Console.ReadLine());
+            double bananakg = double.Parse(Console.ReadLine());
+            double orangekg = double.Parse(Console.ReadLine());
+            double berrykg = double.Parse(Console.ReadLine());
+            double strawberrykg = double.Parse(Console.ReadLine());
+
+            double berryprice = strawberrylvperkg / 2;
+            double orangesprice = berryprice - (0.4 * berryprice);
+            double bananaprice = berryprice - (0.8 * berryprice);
+            double berrysum = berrykg * berryprice;
+            double orangessum = orangekg * orangesprice;
+            double bananasum = bananakg * bananaprice;
+            double strawberrysum = strawberrykg * strawberrylvperkg;
+
+            double totalsum = berrysum + orangessum + bananasum + strawberrysum;
+
+            Console.WriteLine(Math.Round(totalsum, 2));
+        }
+    }
+}
