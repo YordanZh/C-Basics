@@ -1,0 +1,20 @@
+using System;
+
+namespace firstStepsinCodingExcersises
+{
+    class Program
+    {
+        static void Main(string[] args)
+     
+        {
+            int totalpagenum = int.Parse(Console.ReadLine());
+            double pageperhour = double.Parse(Console.ReadLine());
+            int days = int.Parse(Console.ReadLine());
+
+            double totalreadtime = totalpagenum / pageperhour;
+            double hoursperday = totalreadtime / days;
+
+            Console.WriteLine(hoursperday);
+        }
+    }
+}
