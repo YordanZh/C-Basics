@@ -1,0 +1,15 @@
+using System;
+
+namespace ConsoleApp1
+{
+    class Program
+    {
+        static void Main()
+        {
+            double inches = double.Parse(Console.ReadLine());
+            double centimenters = inches * 2.54;
+
+            Console.WriteLine(centimenters);
+        }
+    }
+}
