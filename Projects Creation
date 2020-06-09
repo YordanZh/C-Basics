@@ -1,0 +1,17 @@
+using System;
+
+namespace ConcatenateData
+{
+    class Program
+    {
+        static void Main()
+        {
+            string firstName = Console.ReadLine();
+            int projects = int.Parse(Console.ReadLine());
+
+            int number = 3 * projects;
+
+            Console.WriteLine($"The architect {firstName} will need {number} hours to complete {projects} project/s.");
+        }
+    }
+}
