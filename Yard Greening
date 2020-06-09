@@ -1,0 +1,18 @@
+using System;
+
+namespace ConcatenateData
+{
+    class Program
+    {
+        static void Main()
+        {
+            double sqm = double.Parse(Console.ReadLine());
+            double price = sqm * 7.61;
+            double discount = 0.18 * price;
+            double final = price - discount;
+
+            Console.WriteLine($"The final price is: {final} lv.");
+            Console.WriteLine($"The discount is: {discount} lv.");
+        }
+    }
+}
