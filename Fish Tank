@@ -1,0 +1,23 @@
+using System;
+
+namespace firstStepsinCodingExcersises
+{
+    class Program
+    {
+        static void Main(string[] args)
+
+        {
+            int length = int.Parse(Console.ReadLine());
+            int width = int.Parse(Console.ReadLine());
+            int height = int.Parse(Console.ReadLine());
+            double procent = double.Parse(Console.ReadLine());
+
+            int volume = length * width * height;
+            double totalliters = volume * 0.001;
+            double procentdecimal = procent * 0.01;
+            double actualliters = totalliters * (1 - procentdecimal);
+
+            Console.WriteLine(actualliters);
+        }
+    }
+}
