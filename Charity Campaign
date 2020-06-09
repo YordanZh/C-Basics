@@ -1,0 +1,26 @@
+using System;
+
+namespace firstStepsinCodingExcersises
+{
+    class Program
+    {
+        static void Main(string[] args)
+
+        {
+            int days = int.Parse(Console.ReadLine());
+            int bakers = int.Parse(Console.ReadLine());
+            int cakes = int.Parse(Console.ReadLine());
+            int waffles = int.Parse(Console.ReadLine());
+            int pancakes = int.Parse(Console.ReadLine());
+
+            double totalcakes = cakes * 45;
+            double totalwaffles = waffles * 5.80;
+            double totalpancaks = pancakes * 3.20;
+            double total1day = (totalcakes + totalpancaks + totalwaffles) * bakers;
+            double totalcampaign = total1day * days;
+            double amountaftercost = totalcampaign - (totalcampaign / 8);
+
+            Console.WriteLine(amountaftercost);
+        }
+    }
+}
