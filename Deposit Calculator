@@ -1,0 +1,21 @@
+using System;
+
+namespace firstStepsinCodingExcersises
+{
+    class Program
+    {
+        static void Main(string[] args)
+     
+        {
+            double deposit = double.Parse(Console.ReadLine());
+            int period = int.Parse(Console.ReadLine());
+            double yearinterestpro = double.Parse(Console.ReadLine());
+
+            double acumulatedintrest = (deposit * yearinterestpro) / 100;
+            double intrestmonth = acumulatedintrest / 12;
+            double totalamount = deposit + (period * intrestmonth);
+
+            Console.WriteLine(totalamount);
+        }
+    }
+}
